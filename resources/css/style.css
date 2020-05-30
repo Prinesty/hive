@@ -241,12 +241,16 @@ footer a {
   line-height: 1.5;
 }
 
-.postfoot {
+.postfoot1 a {
+  padding: 0 0.2rem;
+}
+
+.foot {
   padding-top: 1rem;
 }
 
 .legal {
-  margin: 1rem 0;
+  padding: 1rem 0;
   justify-content: flex-start;
 }
 
