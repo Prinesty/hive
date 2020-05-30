@@ -4,22 +4,32 @@
     <link type="text/css" rel="stylesheet" href="resources/css/reset.css">
     <link type="text/css" rel="stylesheet" href="resources/css/style.css">
     <meta charset="utf-8">
-    <title>Missed Call</title>
+    <title>Hive</title>
   </head>
   <body>
-    <!--Fixed Header - #min-laptop -->
-    <div id="min-laptop"class="header min-width flex-row">
-      <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-      <div>
-        <a href="#"><img src="./resources/img/applelogo.png" alt="applelogo"></a>
-      </div>
-      <div>
-        <a href="#"><img src="./resources/img/shoplogo.png" alt="shoplogo"></a>
-      </div>
+
+    <!--Fixed Header - #min-laptop & #iphone-->
+    <div id="min-laptop iphone" class="header min-width iphone-width">
+      <ul class="flex-btn">
+        <li><a href="#">
+          <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+        </a>
+        </li>
+        <li>
+          <div>
+          <a href="#"><img src="./resources/img/applelogo.png" alt="applelogo"></a>
+          </div>
+        </li>
+        <li>
+          <div>
+          <a href="#"><img src="./resources/img/shoplogo.png" alt="shoplogo"></a>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <!-- Fixed Header #max-laptop -->
@@ -34,30 +44,19 @@
       </ul>
     </div>
 
-    <!-- Health-Care Notice eg. Covid-19 #min-laptop-->
-    <div id="min-laptop" class="public-health">
-      <span><a href="#">Evaluate COVID‑19 symptoms and<br> understand
-        next steps</a></span>
-    </div>
-
-    <!-- Health-Care Notice eg. Covid-19 #max-laptop-->
-    <div id="max-laptop" class="public-health">
+    <!-- Health-Care Notice eg. Covid-19-->
+    <div id="min-laptop max-laptop" class="public-health">
       <span><a href="#">Evaluate COVID‑19 symptoms and understand
         next steps</a></span>
     </div>
 
-    <!-- Online Shopping #min-laptop -->
-    <div id="min-laptop" class="online-shopping">
-      <span><a class="shop" href="#">Shop online</a> and get free, no‑contact delivery,<br> Specialist help and more.</span>
-    </div>
-
-    <!-- Online Shopping #max-laptop -->
-    <div id="max-laptop" class="online-shopping">
+    <!-- Online Shopping -->
+    <div id="min-laptop max-laptop" class="online-shopping">
       <span><a class="shop" href="#">Shop online</a> and get free, no‑contact delivery, Specialist help and more.</span>
     </div>
 
     <!-- Main Promo Banner -->
-    <div class="main-banner">
+    <div class="main-banner iphone">
       <div class="promo centered">
         <h2>Hive Z33</h2>
         <p>Lots of love. Less to spend<br>Starting at $99.99p</p>
@@ -67,7 +66,7 @@
     </div>
 
     <!--Tablet Banner -->
-    <div class="tablet centered">
+    <div class="tablet centered iphone">
       <h2>Tab Z</h2>
       <p>Your next computer is not a computer</p>
       <span><a href="#">Learn more</a></span>
@@ -76,12 +75,36 @@
     </div>
 
     <!-- Wearable Banner -->
-    <div class="wearable centered">
+    <div class="wearable centered iphone">
       <h2>Watch Fossil</h2>
       <p>Fitness. Tracking. Time.</p>
       <span><a href="#">Learn more</a></span>
       <span><a href="#">Buy</a></span>
       <div class="wearable-banner"></div>
+    </div>
+
+    <!-- Summary Links of Products #iphone -->
+    <div id="iphone" class="product-link">
+      <div class="product">
+        <div class="link">
+          <a href="#"><img src="./resources/img/HTV.jpg" alt="HTV"></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="./resources/img/expo.jpg" alt="lap"></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="./resources/img/tab.jpg" alt="tab"></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="./resources/img/fest.jpg" alt="HTV"></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="./resources/img/friday.jpg" alt="lap"></a>
+        </div>
+        <div class="link">
+          <a href="#"><img src="./resources/img/holiday.jpg" alt="tab"></a>
+        </div>
+      </div>
     </div>
 
     <!-- Summary Links of Products #min-laptop -->
@@ -139,7 +162,7 @@
     </div>
 
     <!-- Quicklinks #min-laptop -->
-    <div id="min-laptop" class="quicklinks">
+    <div id="min-laptop iphone" class="quicklinks">
       <div class="popular flex-btn">
         <p><a href="#">About Hive</a></p>
         <p><a href="#">+</a></p>
@@ -205,17 +228,17 @@
     </div>
 
     <!-- Footer #min-laptop -->
-    <footer id="min-laptop">
-      <div class="prefoot">
+    <footer id="min-laptop iphone">
+      <div class="prefoot feet">
         <p>More ways to shop: <a href="./locate.html">Find a Hive Store</a>
           or <a href="./locate.html">other retailer</a> near you.
           Or call 0546008543.
         </p>
       </div>
-      <div class="foot postfoot">
+      <div class="foot postfoot feet">
         <p>Copyright &copy 2020 Hive Inc. All rights reserved.</p>
       </div>
-      <div class="legal flex-row">
+      <div class="legal flex-row feet">
         <a href="#">Terms of Use |</a>
         <a href="#">Sales and Refund |</a>
         <a href="#">Ghana</a>
