@@ -407,26 +407,32 @@ and (orientation: portrait) {
     font-size: 4rem;
   }
 
-  .tablet p
-  .wearable p {
-    font-size: 2.5rem;
+  .tablet p {
+    font-size: 6rem;
   }
 
   .tablet .fade {
-    font-size: 1.8rem;
+    font-size: 3rem;
+  }
+
+  .wearable p {
+    font-size: 6rem;
   }
 
   .wearable .fade {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
-  .tablet span,
+  .tablet span, {
+    font-size: 4rem;
+  }
+
   .wearable span {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   p.fade {
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
 
 
