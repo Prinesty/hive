@@ -466,14 +466,14 @@ and (orientation: portrait) {
   }
 
   .prefoot p {
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 
-  .postfoot p {
-    font-size: 12px;
+  .foot p {
+    font-size: 1.5rem;
   }
 
   .legal a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 }
