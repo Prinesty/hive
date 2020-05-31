@@ -8,16 +8,35 @@
   </head>
   <body>
 
-    <!--Fixed Header - #min-laptop & #iphone-->
-    <div id="min-laptop iphone" class="header min-width iphone-width">
-      <ul class="flex-btn">
-        <li><a href="#">
-          <div class="hamburger">
+    <!--Fixed Header - #min-laptop-->
+    <div id="iphone" class="iheader">
+      <ul class="s-width flex-btn">
+        <li><a class="hamburger" href="#">
               <div></div>
               <div></div>
               <div></div>
+            </a>
+        </li>
+        <li>
+          <div>
+          <a href="#"><img src="./resources/img/applelogo.png" alt="applelogo"></a>
           </div>
-        </a>
+        </li>
+        <li>
+          <div>
+          <a href="#"><img src="./resources/img/shoplogo.png" alt="shoplogo"></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="min-laptop" class="header min-width">
+      <ul class="flex-btn">
+        <li><a class="hamburger" href="#">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
         </li>
         <li>
           <div>
@@ -33,8 +52,8 @@
     </div>
 
     <!-- Fixed Header #max-laptop -->
-    <div id="max-laptop" class="full-width header">
-      <ul class="header-list flex-row">
+    <div id="max-laptop" class="header max-width">
+      <ul class="flex-row">
         <li><a href="#"><img src="./resources/img/applelogo.png" alt="applelogo"></a></li>
         <li><a href="#">Phone</a></li>
         <li><a href="#">HTV</a></li>
@@ -45,39 +64,59 @@
     </div>
 
     <!-- Health-Care Notice eg. Covid-19-->
-    <div id="min-laptop max-laptop" class="public-health">
+    <div id="iphone" class="health">
+      <span><p a href="#">Evaluate COVID‑19 symptoms and <br> understand next steps</a></p></span>
+    </div>
+
+    <div id="min-laptop" class="public-health pad">
+      <span><a href="#">Evaluate COVID‑19 symptoms and <br>understand
+        next steps</a></span>
+    </div>
+
+    <div id="max-laptop" class="public-health">
       <span><a href="#">Evaluate COVID‑19 symptoms and understand
         next steps</a></span>
     </div>
 
     <!-- Online Shopping -->
-    <div id="min-laptop max-laptop" class="online-shopping">
+    <div id="iphone" class="shopping">
+      <span><p><a class="shop" href="#">Shop online</a> and get free, no‑contact delivery,<br> Specialist help and more.</p></span>
+    </div>
+
+    <div id="min-laptop" class="online-shopping pad">
+      <span><a class="shop" href="#">Shop online</a> and get free, no‑contact delivery,<br> Specialist help and more.</span>
+    </div>
+
+    <div id="max-laptop" class="online-shopping">
       <span><a class="shop" href="#">Shop online</a> and get free, no‑contact delivery, Specialist help and more.</span>
     </div>
 
     <!-- Main Promo Banner -->
-    <div class="main-banner iphone">
-      <div class="promo centered">
+    <div class="main-banner centered">
+      <div class="promo">
         <h2>Hive Z33</h2>
-        <p>Lots of love. Less to spend<br>Starting at $99.99p</p>
+        <p>Starting at $599.99p</p>
+        <p class="fade">From £29.90/mo. or £400 with trade-in.</p>
         <span><a href="#">Learn More</a></span>
         <span><a href="#">Buy</a></span>
       </div>
     </div>
 
     <!--Tablet Banner -->
-    <div class="tablet centered iphone">
+    <div class="tablet centered">
       <h2>Tab Z</h2>
       <p>Your next computer is not a computer</p>
+      <p class="fade">From £50.90/mo. or £660 with trade-in.</p>
       <span><a href="#">Learn more</a></span>
       <span><a href="#">Buy</a></span>
       <div class="tablet-banner"></div>
     </div>
 
     <!-- Wearable Banner -->
-    <div class="wearable centered iphone">
+    <div class="wearable centered">
       <h2>Watch Fossil</h2>
       <p>Fitness. Tracking. Time.</p>
+      <p class="fade">Equipped with OS Chipset.</p>
       <span><a href="#">Learn more</a></span>
       <span><a href="#">Buy</a></span>
       <div class="wearable-banner"></div>
@@ -161,8 +200,8 @@
       </div>
     </div>
 
-    <!-- Quicklinks #min-laptop -->
-    <div id="min-laptop iphone" class="quicklinks">
+    <!-- Quicklinks & Footer #iphone -->
+    <div id="iphone" class="quicklinks back-container">
       <div class="popular flex-btn">
         <p><a href="#">About Hive</a></p>
         <p><a href="#">+</a></p>
@@ -187,83 +226,121 @@
         <p><a href="#">For Healthcare</a></p>
         <p><a href="#">+</a></p>
       </div>
-      <div class="popular flex-btn">
+      <div class="popular line flex-btn">
         <p><a href="#">Popular Links</a></p>
         <p><a href="#">+</a></p>
       </div>
-    </div>
-        <!--
-        <a href="./team.html">The Team</a>
-        <a href="./joinus.html">Work with Hive</a>
-        <a href="./htv.html">HTV</a>
-        <a href="./phone.html">Phones</a>
-        <a href="./promo.html">Promos</a>
-        <a href="./connect.html">Contact Us</a>
-        <a href="./locate.html">Location</a>
-        <a href="./sponsors.html">Sponsors</a>
-        -->
-
-    <!-- Quicklinks #max-laptop -->
-    <div id="max-laptop" class="contain quicklinks">
-      <div class="shortcut flex-row">
-        <div class="quick1 flex-col">
-          <p>About Hive</p>
-          <a href="./about.html">About Us</a>
-          <a href="./team.html">Meet the Team</a>
-          <a href="./joinus.html">Work with Hive</a>
+      <footer>
+        <div class="prefoot">
+          <p>More ways to shop: <a href="./locate.html">Find a Hive Store</a>
+            or <a href="./locate.html">other retailer</a> near you.
+            Or call 0546008543.
+          </p>
         </div>
-        <div class="quick2 flex-col">
-          <p>Popular Links</p>
-          <a href="./htv.html">HTV</a>
-          <a href="./phone.html">Phones</a>
-          <a href="./promo.html">Promos</a>
-        </div>
-        <div class="quick3 flex-col">
-          <p>Connect with Us</p>
-          <a href="./connect.html">Contact Us</a>
-          <a href="./locate.html">Location</a>
-          <a href="./sponsors.html">Sponsors</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer #min-laptop -->
-    <footer id="min-laptop iphone">
-      <div class="prefoot feet">
-        <p>More ways to shop: <a href="./locate.html">Find a Hive Store</a>
-          or <a href="./locate.html">other retailer</a> near you.
-          Or call 0546008543.
-        </p>
-      </div>
-      <div class="foot postfoot feet">
-        <p>Copyright &copy 2020 Hive Inc. All rights reserved.</p>
-      </div>
-      <div class="legal flex-row feet">
-        <a href="#">Terms of Use |</a>
-        <a href="#">Sales and Refund |</a>
-        <a href="#">Ghana</a>
-      </div>
-    </footer>
-
-    <!-- Footer #max-laptop-->
-    <footer id="max-laptop" class="contain">
-      <div class="prefoot">
-        <p>More ways to shop: <a href="./locate.html">Find a Hive Store</a>
-          or <a href="./locate.html">other retailer</a> near you.
-          Or call 0546008543.
-        </p>
-      </div>
-      <div class="foot flex-btn">
-        <div class="postfoot">
+        <div class="foot postfoot">
           <p>Copyright &copy 2020 Hive Inc. All rights reserved.</p>
         </div>
-        <div class="postfoot1">
+        <div class="legal flex-row">
           <a href="#">Terms of Use |</a>
           <a href="#">Sales and Refund |</a>
           <a href="#">Ghana</a>
         </div>
+      </footer>
+    </div>
+
+    <!-- Quicklinks & Footer #min-laptop -->
+    <div id="min-laptop" class="quicklinks back-container">
+      <div class="popular flex-btn">
+        <p><a href="#">About Hive</a></p>
+        <p><a href="#">+</a></p>
       </div>
-    </footer>
+      <div class="popular flex-btn">
+        <p><a href="#">Services</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <div class="popular flex-btn">
+        <p><a href="#">Shop and Learn</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <div class="popular flex-btn">
+        <p><a href="#">For Busines</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <div class="popular flex-btn">
+        <p><a href="#">For Education</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <div class="popular flex-btn">
+        <p><a href="#">For Healthcare</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <div class="popular line flex-btn">
+        <p><a href="#">Popular Links</a></p>
+        <p><a href="#">+</a></p>
+      </div>
+      <footer>
+        <div class="prefoot">
+          <p>More ways to shop: <a href="./locate.html">Find a Hive Store</a>
+            or <a href="./locate.html">other retailer</a> near you.
+            Or call 0546008543.
+          </p>
+        </div>
+        <div class="foot postfoot">
+          <p>Copyright &copy 2020 Hive Inc. All rights reserved.</p>
+        </div>
+        <div class="legal flex-row">
+          <a href="#">Terms of Use |</a>
+          <a href="#">Sales and Refund |</a>
+          <a href="#">Ghana</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Quicklinks & Footer #max-laptop -->
+    <div id="max-laptop" class="back-container">
+      <div class="contain quicklinks">
+        <div class="shortcut flex-row">
+          <div class="quick1 flex-col">
+            <p>About Hive</p>
+            <a href="#">About Us</a>
+            <a href="#">Meet the Team</a>
+            <a href="#">Work with Hive</a>
+          </div>
+          <div class="quick2 flex-col">
+            <p>Popular Links</p>
+            <a href="#">HTV</a>
+            <a href="#">Phones</a>
+            <a href="#">Promos</a>
+          </div>
+          <div class="quick3 flex-col">
+            <p>Connect with Us</p>
+            <a href="#">Contact Us</a>
+            <a href="#">Location</a>
+            <a href="#">Sponsors</a>
+          </div>
+        </div>
+      </div>
+      <footer class="back-container">
+          <div class="contain">
+            <div class="prefoot">
+              <p>More ways to shop: <a href="#">Find a Hive Store</a>
+                or <a href="#">other retailer</a> near you.
+                Or call 0546008543.
+              </p>
+            </div>
+            <div class="foot flex-btn">
+              <div class="postfoot">
+                <p>Copyright &copy 2020 Hive Inc. All rights reserved.</p>
+              </div>
+              <div class="postfoot1">
+                <a href="#">Terms of Use |</a>
+                <a href="#">Sales and Refund |</a>
+                <a href="#">Ghana</a>
+              </div>
+            </div>
+          </div>
+      </footer>
+    </div>
 
   </body>
 </html>

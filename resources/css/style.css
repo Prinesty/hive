@@ -26,15 +26,8 @@ body {
   align-items: flex-start;
 }
 
-.flex {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .centered {
-  width: auto;
   text-align: center;
-  margin: 0 auto;
 }
 
 .contain {
@@ -45,7 +38,7 @@ body {
 h2 {
   font-size: 3.3rem;
   font-weight: 700;
-  padding: 1rem;
+  padding: 0.5rem 0 1rem 0;
 }
 
 a {
@@ -56,16 +49,22 @@ a {
 .promo p,
 .tablet p,
 .wearable p {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.promo span,
+.tablet span,
+.wearable span {
   font-size: 1.5rem;
-  padding-bottom: 2rem;
+  color: #2997ff;
+  padding: 2.5rem;
 }
 
 .promo a,
 .tablet a,
-.wearable a  {
-  font-size: 1.5rem;
+.wearable a {
   color: #2997ff;
-  padding: 0 2rem;
 }
 
 /** Fixed Header max-laptop**/
@@ -74,13 +73,10 @@ a {
   z-index: 1;
   width: 100%;
   background: black;
-}
-
-.full-width {
   padding: 0.5rem;
 }
 
-.header-list img {
+.max-width img {
   width: 25px;
   height: 20px;
 }
@@ -94,10 +90,25 @@ a {
 }
 
 .min-width img {
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 35px;
   margin: 0 1rem;
 }
+
+/** Fixed Header #iphone **/
+  .s-width {
+    position: fixed;
+    background: black;
+    z-index: 1;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .s-width img {
+    width: 70px;
+    height: 65px;
+    margin: 0 1rem;
+  }
 
 /** Health-Care Notice eg. Covid-19 **/
 .public-health {
@@ -108,9 +119,26 @@ a {
   align-items: center;
   text-align: center;
   background: #0071E3;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
+.health span {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0071E3;
+  padding: 2rem;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.pad span {
+  padding-top: 0.5rem;
+}
 
 /** Online Shopping **/
 .online-shopping {
@@ -119,9 +147,23 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
   text-align: center;
   color: black;
+}
+
+.shopping span {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  color: black;
+  font-size: 1.7rem;
+  line-height: 1.2;
 }
 
 .shop {
@@ -142,6 +184,11 @@ a {
 .promo {
   color: white;
   padding-top: 2%;
+}
+
+p.fade {
+  opacity: 0.5;
+  font-size:1.3rem;
 }
 
 
@@ -185,21 +232,25 @@ a {
   padding: 1rem;
 }
 
-/** Quicklinks **/
+/** Quicklinks & Footer - #maxlaptop **/
+.back-container {
+  background: #f0f8ff;
+  padding-bottom: 1rem;
+}
+
 .quicklinks {
   margin-top: 2rem;
-  border-top: 1px solid silver;
 }
 
 .quicklinks a {
   color: black;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
   opacity: 0.8;
 }
 
 .shortcut p {
   padding: 1rem 0;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .shortcut,
@@ -207,16 +258,9 @@ a {
   justify-content: space-between;
 }
 
-.popular {
-  margin: 0 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid silver;
-}
-
-/** Footer **/
 footer {
+  margin-top: 3rem;
   opacity: 0.8;
-  height: 6rem;
 }
 
 footer a {
@@ -224,18 +268,11 @@ footer a {
 }
 
 .prefoot {
-  margin-top: 2rem;
-  border-bottom: 1px solid silver;
   padding-bottom: 1rem;
 }
 
 .prefoot a {
   color: #2997ff;
-}
-
-.prefoot p {
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 .postfoot1 a {
@@ -244,8 +281,24 @@ footer a {
 
 .foot {
   padding-top: 1rem;
+  border-top: 1px solid #c0c0c0;
 }
 
+
+/** Quicklinks & Footer - #minlaptop **/
+.popular {
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.prefoot p {
+  line-height: 1.5;
+}
+
+.line {
+  margin-bottom: 2rem;
+}
 .legal {
   padding: 1rem 0;
   justify-content: flex-start;
@@ -261,6 +314,10 @@ and (min-width: 720px)
 and (max-width: 1600px) {
   #min-laptop {
     display: none;
+  }
+
+  #max-laptop {
+    visibility: visible;
   }
 
   #iphone {
@@ -325,48 +382,55 @@ and (orientation: portrait) {
     display: contents;
   }
 
-  .product .link {
-    padding: 0.5rem 0;
+  .promo h2 {
+    font-size: 4rem;
   }
 
-  .product {
-    margin-top: 1rem;
+  .promo p {
+    font-size: 2.5rem;
   }
 
-  .iphone h2 {
-    font-size: 3rem;
+  .promo .fade {
+    font-size: 2rem;
   }
 
-  .iphone p,
-  .iphone a {
-    font-size: 2.2rem;
+  .promo span {
+    font-size: 2.5rem;
+  }
+
+  p.fade {
+    font-size: 0.8rem;
   }
 
   .main-banner {
-    height: 80rem;
+    height: 85rem;
   }
 
-  .iphone-width img {
-    width: 50px;
-    height: 45px;
+  .popular {
+    padding: 2rem 0;
+    font-size: 2.5rem;
   }
 
-  .public-health a,
-  .online-shopping a {
-    font-size: 1.5rem;
+  .line {
+    margin-bottom: 2rem;
   }
 
-  .online-shopping span {
-    font-size: 1.5rem;
+  .prefoot,
+  .postfoot,
+  .legal  {
+    margin: 0 1rem;
   }
 
-  .quicklinks p {
-    font-size: 1.7rem;
+  .prefoot p {
+    font-size: 12px;
   }
 
-  .feet p,
-  .feet a {
-    font-size: 1.7rem;
+  .postfoot p {
+    font-size: 12px;
+  }
+
+  .legal a {
+    font-size: 2.5rem;
   }
 
 }
