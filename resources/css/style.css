@@ -383,15 +383,15 @@ and (orientation: portrait) {
   }
 
   .promo h2 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .promo p {
-    font-size:4.5rem;
+    font-size: 3rem;
   }
 
   .promo .fade {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
 
   .promo span {
@@ -409,35 +409,33 @@ and (orientation: portrait) {
   }
 
   .tablet p {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .tablet .fade {
     font-size: 2.7rem;
+    padding-bottom: 1rem;
   }
 
   .wearable p {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .wearable .fade {
-    font-size: 3rem;
+    font-size: 2.7rem;
+    padding-bottom: 1rem;
   }
 
   .tablet span {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .wearable span {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
-
-
-
-
   .main-banner {
-    height: 85rem;
+    height: 90rem;
   }
 
   .popular {
