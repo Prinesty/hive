@@ -1,480 +1,148 @@
 /** Standard Styling **/
 html,
 body {
-  font-size: 16px;
-  margin: 0 auto;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
-
 .flex-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-
 .flex-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 .flex-col {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 }
-
-.centered {
-  text-align: center;
-}
-
-.contain {
-  width: 720px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 3.3rem;
-  font-weight: 700;
-  padding: 0.5rem 0 1rem 0;
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
 }
-
-.promo p,
-.tablet p,
-.wearable p {
-  font-size: 1.8rem;
-  padding-bottom: 1rem;
-}
-
-.promo span,
-.tablet span,
-.wearable span {
-  font-size: 1.5rem;
-  color: #2997ff;
-  padding: 2.5rem;
-}
-
-.promo a,
-.tablet a,
-.wearable a {
-  color: #2997ff;
-}
-
-/** Fixed Header max-laptop**/
 .header {
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
-  background: black;
-  padding: 0.5rem;
-}
-
-.max-width img {
-  width: 25px;
-  height: 20px;
-}
-
-/** Fixed Header #min-laptop **/
-.hamburger div {
-  width: 1.5rem;
-  height: 3px;
-  background-color: white;
-  margin: 0.5rem 1rem;
-}
-
-.min-width img {
-  width: 40px;
-  height: 35px;
-  margin: 0 1rem;
-}
-
-
-/** Health-Care Notice eg. Covid-19 **/
-.public-health {
-  position: relative;
-  top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #0071E3;
+  background-color: rgba(0,0,0,0.9);
   padding: 1rem;
 }
-
-.pad span {
-  padding-top: 0.5rem;
+.header a {
+  color: #f5f5f7;
+  opacity: .8;
 }
-
-/** Online Shopping **/
+.header a:hover {
+  opacity: 1;
+}
+.public-health {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0071E3;
+  padding: 1rem 0;
+}
 .online-shopping {
-  position: relative;
-  top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.25rem;
-  text-align: center;
   color: black;
+  padding: 1rem 0;
 }
-
-.shopping span {
-  position: relative;
-  top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: white;
-  padding: 2rem;
-  color: black;
-  font-size: 1.7rem;
-  line-height: 1.2;
-}
-
-.shop {
+.online-shopping a {
   color: #2997ff;
 }
-
-/** Main Promo Banner **/
+.public-health a:hover,
+.online-shopping a:hover {
+  text-decoration: underline;
+}
 .main-banner {
   background-image: url("../img/se.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  top: 3rem;
   height: 70rem;
+  color: #ffffff;
+  text-align: center;
 }
-
-.promo {
-  color: white;
-  padding-top: 2%;
+.main-banner .phone-name a h2 {
+  font-size: 4rem;
+  padding: 2rem 0;
+  font-weight: 800;
+  font-family: 'Roboto Slab', serif;
 }
-
-p.fade {
-  opacity: 0.5;
-  font-size:1.3rem;
+.main-banner .phone-name {
+  font-size: 1.3rem;
 }
-
-
-/** Tablet Banner **/
-.tablet {
-  margin-top: 4rem;
+.main-banner .phone-name .fade {
+  padding: 1rem;
+  opacity: 0.6;
+  font-size: 1rem;
+}
+.learn {
+   position: absolute;
+   top: 150%;
+   left: 50%;
+   transform: translate(-50%, -150%);
+ }
+.learn span a {
+   padding: 0 1.5rem;
+   font-size: 1.35rem;
+   color: #0071E3;
+ }
+.learn span a:hover {
+   text-decoration: underline;
+ }
+.accessories {
+  margin-top: 2rem;
   background: #f8f8ff;
 }
-
-.tablet-banner {
-  background-image: url("../img/tablet.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 20rem;
-  margin-top: 2rem;
-}
-
-/** Wearable banner **/
-.wearable {
-  margin-top: 1rem;
-  background: #d3d3d3;
-  color: black;
-}
-
-.wearable-banner {
-  background-image: url("../img/watch.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30rem;
-  margin-top: 2rem;
-}
-
-/** Summary Links of Products **/
 .link img {
   width: 100%;
 }
-
 .product .link {
   padding: 1rem;
 }
-
-/** Quicklinks & Footer - #maxlaptop **/
 .back-container {
-  background: #f0f8ff;
-  padding-bottom: 1rem;
+  background: #f5f5f7;
+  padding: 2rem;
+  color: #1d1d1f;
 }
-
 .quicklinks {
-  margin-top: 2rem;
+  margin: 0 15rem;
 }
-
 .quicklinks a {
-  color: black;
+  color: #1d1d1f;
   padding: 0.5rem 0;
-  opacity: 0.8;
 }
-
 .shortcut p {
   padding: 1rem 0;
   font-size: 1.2rem;
 }
-
-.shortcut,
-.postfoot {
+.shortcut {
   justify-content: space-between;
 }
-
 footer {
   margin-top: 3rem;
-  opacity: 0.8;
 }
-
-footer a {
-  color: black;
-}
-
 .prefoot {
   padding-bottom: 1rem;
 }
-
 .prefoot a {
   color: #2997ff;
 }
-
 .postfoot1 a {
   padding: 0 0.2rem;
 }
-
 .foot {
   padding-top: 1rem;
   border-top: 1px solid #c0c0c0;
-}
-
-
-/** Quicklinks & Footer - #minlaptop **/
-.popular {
-  margin: 0 1rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #c0c0c0;
-}
-
-.prefoot p {
-  line-height: 1.5;
-}
-
-.line {
-  margin-bottom: 2rem;
-}
-.legal {
-  padding: 1rem 0;
-  justify-content: flex-start;
-}
-
-.legal a {
-  padding-right: 1rem;
-}
-
-/** Media Query **/
-@media only screen
-and (min-width: 720px)
-and (max-width: 1600px) {
-  #min-laptop {
-    display: none;
-  }
-
-  #max-laptop {
-    visibility: visible;
-  }
-
-  #iphone {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  #max-laptop {
-    display: none;
-  }
-
-  #min-laptop {
-    visibility: visible;
-  }
-
-  #iphone {
-    display: none;
-  }
-
-  .public-health {
-    padding-top: 1.5rem;
-    line-height: 1.2;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-
-  .promo p,
-  .tablet p,
-  .wearable p {
-    font-size: 1.3rem;
-  }
-
-  .promo a,
-  .tablet a,
-  .wearable a  {
-    font-size: 1.3rem;
-  }
-
-  footer {
-    margin: 0 1rem;
-  }
-}
-
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-  #max-laptop {
-    display: none;
-  }
-
-  #min-laptop {
-    display: none;
-  }
-
-  #iphone {
-    display: contents;
-  }
-
-  /** Fixed Header #iphone **/
-  .s-width {
-    position: fixed;
-    background: black;
-    z-index: 1;
-    width: 100%;
-    padding: 1.5rem 0;
-  }
-
-  .s-width img {
-    width: 100px;
-    height: 90px;
-    margin: 0 1rem;
-  }
-
-  .hamburger div {
-    width: 3rem;
-    height: 6px;
-    background-color: white;
-    margin: 1rem 2rem;
-  }
-
-  .health span {
-    position: relative;
-    top: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #0071E3;
-    padding: 3.5rem 0;
-    color: white;
-    font-size: 1.7rem;
-    line-height: 1.2;
-  }
-
-
-  .health p {
-    font-size: 2.5rem;
-  }
-
-  .shopping p {
-    font-size: 2.5rem;
-  }
-
-  .promo h2 {
-    font-size: 4rem;
-  }
-
-  .promo p {
-    font-size: 2rem;
-  }
-
-  .promo .fade {
-    font-size: 2rem;
-  }
-
-  .promo span {
-    font-size: 3.5rem;
-  }
-
-  .tablet h2,
-  .wearable h2 {
-    font-size: 5.5rem;
-    font-weight: normal;
-  }
-
-  .tablet p {
-    font-size: 3.5rem;
-  }
-
-  .tablet .fade {
-    font-size: 2.7rem;
-    padding-bottom: 1rem;
-  }
-
-  .wearable p {
-    font-size: 3.5rem;
-  }
-
-  .wearable .fade {
-    font-size: 2.7rem;
-    padding-bottom: 3rem;
-  }
-
-  .tablet span {
-    font-size: 3rem;
-  }
-
-  .wearable span {
-    font-size: 3rem;
-  }
-
-  .main-banner {
-    height: 90rem;
-  }
-
-  .popular {
-    padding: 2rem 0;
-    font-size: 2.3rem;
-  }
-
-  .line {
-    margin-bottom: 2rem;
-  }
-
-  .prefoot,
-  .postfoot,
-  .legal  {
-    margin: 0 1rem;
-  }
-
-  .prefoot p {
-    font-size: 1.5rem;
-  }
-
-  .foot p {
-    font-size: 1.5rem;
-  }
-
-  .legal a {
-    font-size: 1.5rem;
-  }
 }
